@@ -1,0 +1,19 @@
+[package]
+name = "crm-backend"
+version = "0.1.0"
+authors = ["Jan su"]
+edition = "2021"
+
+[dependencies]
+serde = "1.0.136"
+actix-web = "4.0.1"
+dotenv = "0.15.0"
+log = "0.4.16"
+log4rs = "1.0.0"
+anyhow = "1.0.66"
+sqlx = { version = "0.6.2", features = [
+    "mysql",
+    "runtime-actix-rustls",
+]}
+
+
